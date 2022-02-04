@@ -1,7 +1,10 @@
 .footer-block {
-  // margin-right: 85px;
   text-align: center;
   margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 85px;
+    margin-bottom: 0;
+  }
 }
 
 .footer-block__adress {
@@ -18,6 +21,9 @@
 .logo {
   font-family: "Raleway", sans-serif;
   @include font(24px, 700, 1.19, 0.03em);
+  @media screen and (min-width: 1200px) {
+    @include font(26px, null, null, null);
+  }
 }
 
 .footer__logo {
@@ -73,6 +79,9 @@
 .footer-associate {
   text-align: center;
   margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 
 .footer-associate__text {
@@ -82,28 +91,35 @@
 }
 
 .footer-container {
-  // display: flex;
-  // align-items: baseline;
   text-align: center;
-   @media screen and (min-width: 768px) {
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: space-around;
-   }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
 
 .footer-associate {
-  // margin-right: 93px;
   display: block;
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 
 .subscription-label {
   color: var(--white-color);
   @include font(14px, 700, 1.14, 0.03em);
-  // text-align: left;
   font-family: inherit;
   display: block;
   margin-bottom: 20px;
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .subscription-input {
@@ -116,18 +132,20 @@
   padding-bottom: 15px;
   padding-left: 16px;
   height: 50px;
-  // width: 358px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   width: 450px;
   margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-bottom: 0;
+  }
 }
 
 .subscription-submit {
   fill: var(--white-color);
   text-align: center;
-  // margin-left: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -139,6 +157,9 @@
   &:focus {
     background-color: var(--btn-hover-color);
   }
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
 }
 
 .subscription-submit__text {
@@ -146,9 +167,11 @@
 }
 
 .form-subscription {
-  // display: flex;
-  // justify-content: space-between;
-  // align-items: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .footer-mailing {
