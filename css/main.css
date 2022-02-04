@@ -778,17 +778,47 @@ body {
 }
 
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients-list {
-  display: flex;
-  justify-content: center;
+  margin-bottom: -30px;
+}
+
+@media screen and (min-width: 480px) {
+  .clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
 }
 
 .clients-list__link {
-  width: 170px;
+  width: 100%;
   height: 92px;
   display: flex;
   justify-content: center;
@@ -808,8 +838,29 @@ body {
   fill: var(--accent-color);
 }
 
-.clients-list__item:not(:last-child) {
-  margin-right: 30px;
+.clients-list__item {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .clients-list__item {
+    width: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list__item {
+    width: calc(100% / 3 - 30px);
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-list__item {
+    width: calc(100% / 6 - 30px);
+    margin-left: 30px;
+  }
 }
 
 .clients-list__icon {
@@ -820,11 +871,32 @@ body {
 }
 
 .clients__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    margin-bottom: 50px;
+  }
+}
+
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+  }
 }
 
 .footer-block {
-  margin-right: 85px;
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 .footer-block__adress {
@@ -838,6 +910,14 @@ body {
   letter-spacing: 0.03em;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 .footer__logo {
@@ -890,6 +970,11 @@ body {
   fill: var(--white-color);
 }
 
+.footer-associate {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
 .footer-associate__text {
   color: var(--white-color);
   font-weight: 700;
@@ -897,12 +982,10 @@ body {
 }
 
 .footer-container {
-  display: flex;
-  align-items: baseline;
+  text-align: center;
 }
 
 .footer-associate {
-  margin-right: 93px;
   display: block;
 }
 
@@ -912,10 +995,10 @@ body {
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  text-align: left;
   font-family: inherit;
   display: block;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .subscription-input {
@@ -931,17 +1014,16 @@ body {
   padding-bottom: 15px;
   padding-left: 16px;
   height: 50px;
-  width: 358px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  /* outline: none; */
+  width: 450px;
+  margin-bottom: 20px;
 }
 
 .subscription-submit {
   fill: var(--white-color);
   text-align: center;
-  margin-left: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -959,10 +1041,9 @@ body {
   margin-right: 10px;
 }
 
-.form-subscription {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.footer-mailing {
+  text-align: center;
+  display: inline-block;
 }
 
 .button-list {

@@ -1,6 +1,9 @@
 .footer-block {
-  margin-right: 85px;
+  // margin-right: 85px;
+  text-align: center;
+  margin-bottom: 60px;
 }
+
 .footer-block__adress {
   margin-top: 20px;
 }
@@ -10,9 +13,11 @@
   @include font(14px, null, 1.71, 0.03em);
   padding-top: 60px;
   padding-bottom: 60px;
-  //  letter-spacing: 0.03em;
-  // font-size: 14px;
-  // line-height: 1.71;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  @include font(24px, 700, 1.19, 0.03em);
 }
 
 .footer__logo {
@@ -65,40 +70,45 @@
   fill: var(--white-color);
 }
 
+.footer-associate {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
 .footer-associate__text {
   color: var(--white-color);
   font-weight: 700;
   margin-bottom: 20px;
 }
+
 .footer-container {
-  display: flex;
-  align-items: baseline;
-}
+  // display: flex;
+  // align-items: baseline;
+  text-align: center;
+   @media screen and (min-width: 768px) {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+   }
 
 .footer-associate {
-  margin-right: 93px;
+  // margin-right: 93px;
   display: block;
 }
 
 .subscription-label {
   color: var(--white-color);
   @include font(14px, 700, 1.14, 0.03em);
-  // font-size: 14px;
-  // font-weight: 700;
-  // line-height: 1.14;
-  // letter-spacing: 0.03em;
-  text-align: left;
+  // text-align: left;
   font-family: inherit;
   display: block;
   margin-bottom: 20px;
+  text-align: center;
 }
+
 .subscription-input {
   font-family: inherit;
   @include font(16px, 400, 1.25, 0.03em);
-  // font-size: 16px;
-  // font-weight: 400;
-  // line-height: 1.25;
-  // letter-spacing: 0.03em;
   text-align: left;
   color: var(--rgba-color);
   background-color: var(--bg-color2);
@@ -106,17 +116,18 @@
   padding-bottom: 15px;
   padding-left: 16px;
   height: 50px;
-  width: 358px;
+  // width: 358px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  /* outline: none; */
+  width: 450px;
+  margin-bottom: 20px;
 }
 
 .subscription-submit {
   fill: var(--white-color);
   text-align: center;
-  margin-left: 12px;
+  // margin-left: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -135,7 +146,12 @@
 }
 
 .form-subscription {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
+}
+
+.footer-mailing {
+  text-align: center;
+  display: inline-block;
 }
