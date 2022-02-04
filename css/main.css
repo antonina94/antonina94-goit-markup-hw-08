@@ -629,7 +629,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-@media screen and (max-width: 1999px) {
+@media screen and (max-width: 1199px) {
   .work {
     display: none;
   }

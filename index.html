@@ -144,6 +144,7 @@
             <li class="work-list__item">
               <div class="thumb">
                 <img
+                  srcset="./images/img1.jpg 1x, ./images/img/img-1-2x.jpg 2x"
                   src="./images/img1.jpg"
                   width="370"
                   alt="Работа за компьютером"
@@ -153,13 +154,23 @@
             </li>
             <li class="work-list__item">
               <div class="thumb">
-                <img src="./images/img2.jpg" width="370" alt="Телефон" />
+                <img
+                  srcset="./images/img2.jpg 1x, ./images/img/img-2-2x.jpg 2x"
+                  src="./images/img2.jpg"
+                  width="370"
+                  alt="Телефон"
+                />
                 <p class="label">Мобильные приложения</p>
               </div>
             </li>
             <li class="work-list__item">
               <div class="thumb">
-                <img src="./images/img3.jpg" width="370" alt="Планшет" />
+                <img
+                  srcset="./images/img3.jpg 1x, ./images/img/img-3-2x.jpg 2x"
+                  src="./images/img3.jpg"
+                  width="370"
+                  alt="Планшет"
+                />
                 <p class="label">Дизайнерские решения</p>
               </div>
             </li>
@@ -252,11 +263,28 @@
             </li>
             <li class="team-list__item">
               <div class="team-list__photo">
-                <img
-                  src="./images/img5.jpg"
-                  width="270"
-                  alt="Ольга Репина фото"
-                />
+                <picture>
+                  <source
+                    srcset="./images/img5.jpg 1x, ./images/img/team-2-2x.jpg 2x"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img/olha-tab-1x.jpg 1x,
+                      ./images/img/olha-tab-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img/olha-mob-1x.jpg 1x,
+                      ./images/img/olha-mob-2x.jpg 2x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img src="./images/img5.jpg" alt="Ольга Репина фото" />
+                </picture>
+
                 <div class="team-list__container">
                   <h3 class="team-list__aftertitle">Ольга Репина</h3>
                   <p class="team-list__text">
@@ -313,11 +341,28 @@
             </li>
             <li class="team-list__item">
               <div class="team-list__photo">
-                <img
-                  src="./images/img6.jpg"
-                  width="270"
-                  alt="Николай Тарасов фото"
-                />
+                <picture>
+                  <source
+                    srcset="./images/img6.jpg 1x, ./images/img/team-3-2x.jpg 2x"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img/nikol-tab-1x.jpg 1x,
+                      ./images/img/nikol-tab-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img/nikolay-mob-1x.jpg 1x,
+                      ./images/img/nikolay-mob-2x.jpg 2x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img src="./images/img6.jpg" alt="Николай Тарасов фото" />
+                </picture>
+
                 <div class="team-list__container">
                   <h3 class="team-list__aftertitle">Николай Тарасов</h3>
                   <p class="team-list__text">
@@ -374,11 +419,27 @@
             </li>
             <li class="team-list__item">
               <div class="team-list__photo">
-                <img
-                  src="./images/img7.jpg"
-                  width="270"
-                  alt="Михаил Ермаков фото"
-                />
+                <picture>
+                  <source
+                    srcset="./images/img7.jpg 1x, ./images/img/team-4-2x.jpg 2x"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img/mikhail-tab-1x.jpg 1x,
+                      ./images/img/mikhail-tab-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img/mikhail-mob-1x.jpg 1x,
+                      ./images/img/mikhail-mob-2x.jpg 2x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img src="./images/img7.jpg" alt="Михаил Ермаков фото" />
+                </picture>
                 <div class="team-list__container">
                   <h3 class="team-list__aftertitle">Михаил Ермаков</h3>
                   <p class="team-list__text">
