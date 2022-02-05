@@ -21,6 +21,7 @@
   --color-icon: #afb1b8;
   --btn-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   --gradient: rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4);
+  --main-font: "Roboto", sans-serif;
 }
 
 p,
@@ -355,14 +356,26 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
+@media screen and (max-width: 1199px) {
+  .header-nav {
+    display: none;
+  }
+}
+
 .header__container {
   display: flex;
   align-items: center;
 }
 
+@media screen and (max-width: 1200px) {
+  .header__container {
+    height: 60px;
+  }
+}
+
 /* Logo */
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: 700;
   line-height: 1.19;
@@ -410,7 +423,7 @@ body {
   position: absolute;
   bottom: -1px;
   left: 0;
-  content: '';
+  content: "";
   width: 48px;
   height: 4px;
   background: #2196f3;
@@ -430,6 +443,12 @@ body {
 .header-contact-list {
   display: flex;
   margin-left: auto;
+}
+
+@media screen and (max-width: 1199px) {
+  .header-contact-list {
+    display: none;
+  }
 }
 
 .header-contact-list__icon {
@@ -459,6 +478,155 @@ body {
 
 .header-contact-list__link:hover .header-contact-list__icon, .header-contact-list__link:focus .header-contact-list__icon {
   fill: var(--accent-color);
+}
+
+.menu-open-btn {
+  margin-left: auto;
+  background-color: var(--white-color);
+  border: none;
+  width: 40px;
+  height: 40px;
+  transition-property: fill;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+}
+
+.menu-open-btn:hover, .menu-open-btn:focus {
+  fill: var(--accent-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-open-btn {
+    display: none;
+  }
+}
+
+.mob-menu {
+  position: fixed;
+  background-color: var(--white-color);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  padding-top: 10px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  padding-right: 15px;
+}
+
+.mob-menu .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 786px) {
+  .mob-menu {
+    display: none;
+  }
+}
+
+.menu-close-btn {
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+  display: block;
+  background-color: var(--white-color);
+  border: none;
+  transition-property: fill;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+}
+
+.menu-close-btn:hover, .menu-close-btn:focus {
+  fill: var(--accent-color);
+}
+
+@media screen and (min-width: 480px) {
+  .menu-close-btn {
+    display: block;
+  }
+}
+
+.mob-menu-list__link {
+  display: block;
+  font-family: var(--main-font);
+  color: var(--primary-text-color);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  transition-property: color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+}
+
+.mob-menu-list__link:hover, .mob-menu-list__link:focus {
+  color: var(--accent-color);
+}
+
+.mob-menu-list__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.menu-contact-list__link {
+  display: block;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--secondery-text-color);
+}
+
+.menu-contact-list__link:hover, .menu-contact-list__link:focus {
+  color: var(--accent-color);
+}
+
+.menu-mail {
+  font-size: 24px;
+}
+
+.menu-contact-list__item:nth-child(1) {
+  margin-bottom: 32px;
+}
+
+.menu-contact-list__item:nth-child(2) {
+  margin-bottom: 64px;
+}
+
+.menu-social-list {
+  display: flex;
+}
+
+.menu-social-list__link {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.menu-open-btn {
+  margin-left: auto;
+  background-color: var(--white-color);
+  border: none;
+  width: 40px;
+  height: 40px;
+  transition-property: fill;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+}
+
+.menu-open-btn:hover, .menu-open-btn:focus {
+  fill: var(--accent-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-open-btn {
+    display: none;
+  }
 }
 
 .hero {

@@ -2,14 +2,23 @@
   border-bottom: 1px solid #ececec;
 }
 
+.header-nav {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
 .header__container {
   display: flex;
   align-items: center;
+  @media screen and (max-width: 1200px) {
+    height: 60px;
+  }
 }
 
 /* Logo */
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   @include font(26px, 700, 1.19, 0.03em);
   // letter-spacing: 0.03em;
   // font-size: 26px;
@@ -57,7 +66,7 @@
     position: absolute;
     bottom: -1px;
     left: 0;
-    content: '';
+    content: "";
     width: 48px;
     height: 4px;
     background: #2196f3;
@@ -78,6 +87,9 @@
 .header-contact-list {
   display: flex;
   margin-left: auto;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .header-contact-list__icon {
@@ -91,10 +103,6 @@
 .header-contact-list__link {
   color: var(--secondery-text-color);
   @include font(14px, 500, 1.14, 0.02em);
-  // letter-spacing: 0.02em;
-  // font-weight: 500;
-  // font-size: 14px;
-  // line-height: 1.14;
   display: flex;
   align-items: center;
   transition-property: color;
@@ -106,5 +114,137 @@
     .header-contact-list__icon {
       fill: var(--accent-color);
     }
+  }
+}
+// ///////////////////Menu
+.menu-open-btn {
+  margin-left: auto;
+  background-color: var(--white-color);
+  border: none;
+  width: 40px;
+  height: 40px;
+  transition-property: fill;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+  @media screen and (min-width: 786px) {
+    display: none;
+  }
+}
+
+.mob-menu {
+  position: fixed;
+  background-color: var(--white-color);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  padding-top: 10px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  padding-right: 15px;
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 786px) {
+    display: none;
+  }
+}
+
+.menu-close-btn {
+  // position: absolute;
+  // top: 10px;
+  // right: 15px;
+  // width: 30px;
+  // height: 30px;
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+  display: block;
+  background-color: var(--white-color);
+  border: none;
+  transition-property: fill;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+  @media screen and (min-width: 480px) {
+    display: block;
+  }
+}
+
+.mob-menu-list__link {
+  display: block;
+  font-family: var(--main-font);
+  color: var(--primary-text-color);
+  @include font(40px, 500, 1.17, 0.02em);
+  transition-property: color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.mob-menu-list__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+// .mob-menu-list__item:nth-child(3) {
+//   margin-bottom: 302px;
+// }
+
+.menu-contact-list__link {
+  display: block;
+  @include font(34px, 500, 1.17, 0.02em);
+  color: var(--secondery-text-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.menu-mail {
+  font-size: 24px;
+}
+.menu-contact-list__item:nth-child(1) {
+  margin-bottom: 32px;
+}
+
+.menu-contact-list__item:nth-child(2) {
+  margin-bottom: 64px;
+}
+
+.menu-social-list {
+  display: flex;
+}
+.menu-social-list__link {
+  @include font(18px, 500, 1.17, 0.02em);
+  color: var(--accent-color);
+}
+
+.menu-open-btn {
+  margin-left: auto;
+  background-color: var(--white-color);
+  border: none;
+  width: 40px;
+  height: 40px;
+  transition-property: fill;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+  @media screen and (min-width: 1200px) {
+    display: none;
   }
 }
