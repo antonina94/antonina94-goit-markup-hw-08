@@ -1373,26 +1373,26 @@ body {
 }
 
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.card-list {
-  display: flex;
-  flex-wrap: wrap;
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
-.card-list__item:not(:nth-child(3n)) {
-  margin-right: 30px;
-  width: 370px;
+@media screen and (min-width: 768px) {
+  .card-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .card-list__item {
   margin-bottom: 30px;
-}
-
-.card-list__item:nth-child(n + 7) {
-  margin-bottom: 0;
 }
 
 /* Project-title */
