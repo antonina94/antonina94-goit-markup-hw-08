@@ -495,7 +495,7 @@ body {
   fill: var(--accent-color);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 786px) {
   .menu-open-btn {
     display: none;
   }
@@ -542,12 +542,6 @@ body {
 
 .menu-close-btn:hover, .menu-close-btn:focus {
   fill: var(--accent-color);
-}
-
-@media screen and (min-width: 480px) {
-  .menu-close-btn {
-    display: block;
-  }
 }
 
 .mob-menu-list__link {

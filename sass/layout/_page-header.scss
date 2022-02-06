@@ -116,7 +116,7 @@
     }
   }
 }
-// ///////////////////Menu
+
 .menu-open-btn {
   margin-left: auto;
   background-color: var(--white-color);
@@ -176,9 +176,6 @@
   &:hover,
   &:focus {
     fill: var(--accent-color);
-  }
-  @media screen and (min-width: 480px) {
-    display: block;
   }
 }
 
