@@ -11,8 +11,12 @@
 .header__container {
   display: flex;
   align-items: center;
-  @media screen and (max-width: 1199px) {
-    height: 60px;
+  height: 60px;
+  @media screen and (min-width: 768px) {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -28,7 +32,12 @@
 
 .header__logo {
   color: var(--primary-text-color);
-  margin-right: 93px;
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 
 .logo .accent {
@@ -81,14 +90,22 @@
 }
 
 .heder-contact-list__item:not(:last-child) {
-  margin-right: 30px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+  }
 }
 
 .header-contact-list {
-  display: flex;
   margin-left: auto;
   @media screen and (max-width: 767px) {
     display: none;
+    margin-left: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
   }
 }
 
@@ -203,6 +220,13 @@
 .menu-social-list {
   display: flex;
 }
+
+.menu-social-list__item:not(:last-child) {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
 .menu-social-list__link {
   @include font(18px, 500, 1.17, 0.02em);
   color: var(--accent-color);
