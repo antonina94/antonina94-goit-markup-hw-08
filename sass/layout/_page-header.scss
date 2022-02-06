@@ -3,7 +3,7 @@
 }
 
 .header-nav {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }
@@ -11,7 +11,7 @@
 .header__container {
   display: flex;
   align-items: center;
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1199px) {
     height: 60px;
   }
 }
@@ -87,7 +87,7 @@
 .header-contact-list {
   display: flex;
   margin-left: auto;
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }
@@ -117,27 +117,13 @@
   }
 }
 
-.menu-open-btn {
-  margin-left: auto;
-  background-color: var(--white-color);
-  border: none;
-  width: 40px;
-  height: 40px;
-  transition-property: fill;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
-  &:hover,
-  &:focus {
-    fill: var(--accent-color);
-  }
-  // @media screen and (min-width: 786px) {
-  //   display: none;
-  // }
+.mob-menu.is-hidden {
+  left: 100%;
 }
 
 .mob-menu {
   position: fixed;
-  background-color: var(--white-color);
+  background-color: #ffffff;
   top: 0;
   left: 0;
   width: 100vw;
@@ -147,23 +133,17 @@
   padding-bottom: 48px;
   padding-left: 40px;
   padding-right: 15px;
+  // transform: translate(0);
+  transition: left 250ms, visibility 250ms;
   .container {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-  @media screen and (min-width: 786px) {
-    display: none;
-  }
 }
 
 .menu-close-btn {
-  // position: absolute;
-  // top: 10px;
-  // right: 15px;
-  // width: 30px;
-  // height: 30px;
   margin-left: auto;
   width: 40px;
   height: 40px;
@@ -229,9 +209,11 @@
 }
 
 .menu-open-btn {
+  border: transparent;
+  background-color: transparent;
   margin-left: auto;
-  background-color: var(--white-color);
-  border: none;
+  // background-color: var(--white-color);
+  // border: none;
   width: 40px;
   height: 40px;
   transition-property: fill;
@@ -241,7 +223,7 @@
   &:focus {
     fill: var(--accent-color);
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
