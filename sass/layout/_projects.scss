@@ -8,9 +8,16 @@
 }
 
 .card-list {
+  margin-bottom: -30px;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -30px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
   }
 }
 
@@ -21,11 +28,15 @@
 
 .card-list__item {
   margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 3 - 30px);
+    margin-left: 30px;
+  }
 }
-
-// .card-list__item:nth-child(n + 7) {
-//   margin-bottom: 0;
-// }
 
 /* Project-title */
 .projects {
@@ -35,6 +46,15 @@
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   box-sizing: border-box;
+}
+
+.project-another-high {
+  @media screen and (min-width: 768px) {
+    padding-bottom: 56px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 20px;
+  }
 }
 
 .project__title {
