@@ -34,10 +34,10 @@
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
   padding: 40px;
-  @media screen and (min-width: 480px) {
+  @include tab {
     width: 450px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desk {
     width: 528px;
   }
 }
@@ -169,7 +169,7 @@
   letter-spacing: 0.03em;
   font-family: inherit;
   text-align: justify;
-  @media screen and (min-width: 1200px) {
+  @include desk {
     flex-direction: row;
     align-items: center;
     justify-content: center;

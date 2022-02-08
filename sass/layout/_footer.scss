@@ -1,7 +1,7 @@
 .footer-block {
   text-align: center;
   margin-bottom: 60px;
-  @media screen and (min-width: 1200px) {
+  @include desk {
     margin-right: 85px;
     margin-bottom: 0;
   }
@@ -79,7 +79,7 @@
 .footer-associate {
   text-align: center;
   margin-bottom: 60px;
-  @media screen and (min-width: 1200px) {
+  @include desk {
     margin-bottom: 0;
   }
 }
@@ -92,12 +92,12 @@
 
 .footer-container {
   text-align: center;
-  @media screen and (min-width: 768px) {
+  @include tab {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  @media screen and (min-width: 1200px) {
+  @include desk {
     display: flex;
     align-items: baseline;
   }
@@ -105,7 +105,7 @@
 
 .footer-associate {
   display: block;
-  @media screen and (min-width: 1200px) {
+  @include desk {
     margin-right: 93px;
   }
 }
@@ -117,7 +117,7 @@
   display: block;
   margin-bottom: 20px;
   text-align: center;
-  @media screen and (min-width: 1200px) {
+  @include desk {
     text-align: left;
   }
 }
@@ -137,7 +137,7 @@
   border-radius: 4px;
   width: 450px;
   margin-bottom: 20px;
-  @media screen and (min-width: 1200px) {
+  @include desk {
     width: 358px;
     margin-bottom: 0;
   }
@@ -157,7 +157,7 @@
   &:focus {
     background-color: var(--btn-hover-color);
   }
-  @media screen and (min-width: 1200px) {
+  @include desk {
     margin-left: 12px;
   }
 }
@@ -167,7 +167,7 @@
 }
 
 .form-subscription {
-  @media screen and (min-width: 1200px) {
+  @include desk {
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -1,7 +1,7 @@
 .about {
   padding-top: 60px;
   padding-bottom: 60px;
-  @media screen and (min-width: 1200px) {
+  @include desk {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -20,12 +20,12 @@
 
 .about-icon-list {
   margin-bottom: -30px;
-  @media screen and (min-width: 768px) {
+  @include tab {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desk {
     display: flex;
     margin-left: -30px;
   }
@@ -33,11 +33,11 @@
 
 .about-icon-list__item {
   margin-bottom: 30px;
-  @media screen and (min-width: 768px) {
+  @include tab {
     width: calc(100% / 2 - 30px);
     margin-left: 30px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desk {
     width: calc(100% / 4 - 30px);
     margin-left: 30px;
   }
@@ -54,10 +54,10 @@
   @include font(14px, 700, 1.17, 0.03em);
   margin-bottom: 10px;
   text-align: center;
-  @media screen and (min-width: 768px) {
+  @include tab {
     text-align: justify;
   }
-  @media screen and (min-width: 1200px) {
+  @include desk {
     text-align: justify;
   }
 }
