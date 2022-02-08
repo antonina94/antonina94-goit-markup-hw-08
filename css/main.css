@@ -280,18 +280,20 @@ body {
 
 .label-agreement {
   display: flex;
+  align-items: center;
   margin-bottom: 30px;
   font-size: 12px;
   line-height: 1.17;
-  letter-spacing: 0.03em;
-  font-family: inherit;
-  text-align: justify;
+}
+
+@media screen and (min-width: 768px) {
+  .label-agreement {
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .label-agreement {
-    flex-direction: row;
-    align-items: center;
     justify-content: center;
     font-size: 14px;
     line-height: 1.7;

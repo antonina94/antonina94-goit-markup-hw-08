@@ -163,15 +163,14 @@
 
 .label-agreement {
   display: flex;
+  align-items: center;
   margin-bottom: 30px;
   font-size: 12px;
   line-height: 1.17;
-  letter-spacing: 0.03em;
-  font-family: inherit;
-  text-align: justify;
+  @include tab {
+    justify-content: center;
+  }
   @include desk {
-    flex-direction: row;
-    align-items: center;
     justify-content: center;
     font-size: 14px;
     line-height: 1.7;
