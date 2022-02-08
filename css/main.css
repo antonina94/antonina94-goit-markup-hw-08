@@ -367,6 +367,7 @@ body {
   padding-top: 10px;
   padding-bottom: 48px;
   padding-left: 40px;
+  padding-right: 15px;
   transition: var(--transition-duration) var(--transition-timing-function), visibility var(--transition-timing-function);
 }
 
