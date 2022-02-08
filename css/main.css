@@ -367,7 +367,6 @@ body {
   padding-top: 10px;
   padding-bottom: 48px;
   padding-left: 40px;
-  padding-right: 15px;
   transition: var(--transition-duration) var(--transition-timing-function), visibility var(--transition-timing-function);
 }
 
@@ -398,6 +397,11 @@ body {
 
 .menu-close-btn:hover, .menu-close-btn:focus {
   fill: var(--accent-color);
+}
+
+.close-button {
+  margin-left: auto;
+  fill: var(--primary-text-color);
 }
 
 .mob-menu-list__link {
