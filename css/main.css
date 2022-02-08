@@ -609,6 +609,7 @@ body {
 @media screen and (min-width: 1200px) {
   .heder-contact-list__item:not(:last-child) {
     margin-right: 30px;
+    margin-bottom: 0;
   }
 }
 
@@ -627,6 +628,7 @@ body {
 @media screen and (min-width: 1200px) {
   .header-contact-list {
     display: flex;
+    align-items: center;
   }
 }
 
