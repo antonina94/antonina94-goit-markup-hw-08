@@ -368,8 +368,7 @@ body {
   z-index: 2;
   padding-top: 48px;
   padding-bottom: 48px;
-  padding-left: 40px;
-  padding-right: 15px;
+  padding-left: 25px;
   transition: var(--transition-duration) var(--transition-timing-function), visibility var(--transition-timing-function);
 }
 
