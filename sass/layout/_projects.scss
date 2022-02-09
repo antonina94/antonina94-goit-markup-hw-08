@@ -100,11 +100,18 @@
   background: var(--overlay-color);
   color: var(--white-color);
   @include font(18px, null, 1.5, 0.03em);
-  // font-size: 18px;
-  // line-height: 1.5;
-  // letter-spacing: 0.03em;
-  padding: 63px 24px;
-
+  @media screen and (min-width: 320px) {
+    padding-top: 0 24px;
+  }
+  @include tel {
+    padding: 77px 24px;
+  }
+  @include tab {
+    padding: 49px 24px;
+  }
+  @include desk {
+    padding: 63px 24px;
+  }
   transform: translatey(101%);
   transition-property: transform;
   transition-duration: var(--transition-duration);

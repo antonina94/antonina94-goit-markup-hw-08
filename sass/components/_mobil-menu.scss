@@ -9,7 +9,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 2;
+  z-index: 3;
   padding-top: 48px;
   padding-bottom: 48px;
   // padding-left: 40px;
@@ -95,6 +95,7 @@
 .menu-social-list {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .menu-social-list__item:not(:last-child) {

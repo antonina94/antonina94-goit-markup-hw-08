@@ -365,7 +365,7 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 2;
+  z-index: 3;
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 25px;
@@ -458,6 +458,7 @@ body {
 .menu-social-list {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .menu-social-list__item:not(:last-child) {
@@ -1535,10 +1536,33 @@ body {
   font-size: 18px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  padding: 63px 24px;
   transform: translatey(101%);
   transition-property: transform;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
+}
+
+@media screen and (min-width: 320px) {
+  .overlay {
+    padding-top: 0 24px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .overlay {
+    padding: 77px 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .overlay {
+    padding: 49px 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .overlay {
+    padding: 63px 24px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
