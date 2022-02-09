@@ -2,6 +2,7 @@
   text-align: center;
   margin-bottom: 60px;
   @include desk {
+    text-align: left;
     margin-right: 85px;
     margin-bottom: 0;
   }
@@ -80,6 +81,7 @@
   text-align: center;
   margin-bottom: 60px;
   @include desk {
+    text-align: left;
     margin-bottom: 0;
   }
 }

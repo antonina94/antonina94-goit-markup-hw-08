@@ -40,22 +40,21 @@
 
 /* Project-title */
 .projects {
+  flex-grow: 1;
   padding: 20px 24px;
   background-color: var(--white-color);
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
+  border-top: 0;
   box-sizing: border-box;
 }
 
-.project-another-high {
-  @include tab {
-    padding-bottom: 56px;
-  }
-  @include desk {
-    padding-bottom: 20px;
-  }
-}
+// .projects {
+//   @include tab {
+//     flex-grow: 1;
+//   }
+// }
 
 .project__title {
   color: var(--primary-text-color);
@@ -72,7 +71,9 @@
 }
 
 .card-list__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition-property: box-shadow;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);

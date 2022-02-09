@@ -458,6 +458,7 @@ body {
 
 .menu-social-list {
   display: flex;
+  align-items: center;
 }
 
 .menu-social-list__item:not(:last-child) {
@@ -1132,6 +1133,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .footer-block {
+    text-align: left;
     margin-right: 85px;
     margin-bottom: 0;
   }
@@ -1221,6 +1223,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .footer-associate {
+    text-align: left;
     margin-bottom: 0;
   }
 }
@@ -1473,24 +1476,14 @@ body {
 
 /* Project-title */
 .projects {
+  flex-grow: 1;
   padding: 20px 24px;
   background-color: var(--white-color);
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
+  border-top: 0;
   box-sizing: border-box;
-}
-
-@media screen and (min-width: 768px) {
-  .project-another-high {
-    padding-bottom: 56px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .project-another-high {
-    padding-bottom: 20px;
-  }
 }
 
 .project__title {
@@ -1511,7 +1504,9 @@ body {
 }
 
 .card-list__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition-property: box-shadow;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
