@@ -119,6 +119,7 @@
   display: block;
   margin-bottom: 20px;
   text-align: center;
+  text-transform: uppercase;
   @include desk {
     text-align: left;
   }
@@ -139,6 +140,13 @@
   border-radius: 4px;
   width: 450px;
   margin-bottom: 20px;
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
+
+  @include tab {
+    max-width: 450px;
+  }
   @include desk {
     width: 358px;
     margin-bottom: 0;

@@ -99,18 +99,21 @@
   height: 100%;
   background: var(--overlay-color);
   color: var(--white-color);
-  @include font(18px, null, 1.5, 0.03em);
-  @media screen and (min-width: 320px) {
-    padding-top: 0 24px;
+  @include font(12px, null, 1.5, 0.03em);
+  @media screen and (max-width: 479px) {
+    padding: 49px 24px;
   }
   @include tel {
     padding: 77px 24px;
+    font-size: 18px;
   }
   @include tab {
     padding: 49px 24px;
+    font-size: 18px;
   }
   @include desk {
     padding: 63px 24px;
+    font-size: 18px;
   }
   transform: translatey(101%);
   transition-property: transform;
